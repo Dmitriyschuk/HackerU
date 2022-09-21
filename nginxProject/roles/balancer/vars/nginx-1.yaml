@@ -1,0 +1,11 @@
+    upstream backend {
+      server 192.168.1.110:80;
+      server 192.168.1.188:80;           
+    }
+    server {
+      listen 80;
+      server_name nginx-1.local;
+      location / {
+        proxy_pass http://backend;
+      }
+    }
