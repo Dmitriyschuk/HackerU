@@ -1,0 +1,11 @@
+[balancer]
+nginx-1 ansible_host=192.168.1.160 ansible_ssh_port=22 ansible_user=labs ansible_ssh_private_key_file="./labs_private" app_root=page1/index.nginx-debian.html nginx_conf="./roles/balancer/vars/nginx-1.yaml"
+
+
+
+[server]
+nginx-2 ansible_host=192.168.1.110 ansible_ssh_port=22 ansible_user=labs ansible_ssh_private_key_file="./labs_private" app_root=page2/index.nginx-debian.html nginx_conf="./roles/server/vars/nginx-(2,3).yaml"
+
+nginx-3 ansible_host=192.168.1.188 ansible_ssh_port=22 ansible_user=labs ansible_ssh_private_key_file="./labs_private" app_root=page3/index.nginx-debian.html nginx_conf="./roles/server/vars/nginx-(2,3).yaml"
+
+

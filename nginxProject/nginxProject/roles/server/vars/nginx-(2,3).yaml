@@ -1,0 +1,7 @@
+    server {
+      listen 80;
+      location / {
+        access_log off;
+        root /var/www/index.nginx-debian.html;
+      }
+    }
