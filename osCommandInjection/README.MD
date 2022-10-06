@@ -13,7 +13,8 @@
 
 ## Sample code PHP
 
-![img.png](img.png)</p>
+![image](https://user-images.githubusercontent.com/61540481/194315960-dc5af6cb-1041-4969-8193-d74ff152412a.png)
+</p>
 В данном примере используется не безопасный пользовательский ввод.
 
 Переменная $rootTestCmd собирается из нескольких источников: 
